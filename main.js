@@ -9,7 +9,7 @@ function closeNav(){
 
 
 function course_video(){
-    location.href ="file:///C:/Users/ABHINAV/Desktop/E_learning_startup/main_course.html";
+    location.href ="https://Lyghtjr.github.io/Abhianna/main_course.html";
     
 }
 function course_closeNav(){
@@ -26,7 +26,7 @@ function course_openNav(){
 }
 
 function mainPage(){
-    location.href="file:///C:/Users/ABHINAV/Desktop/E_learning_startup/Main.html";
+    location.href="https://Lyghtjr.github.io/Abhianna/Main.html";
 }
 
 function fasright(){
