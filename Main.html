@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia"
+      rel="stylesheet"
+    />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Architects Daughter"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>e-learning</title>
+  </head>
+  <body>
+    <header>
+      <div class="col">
+        <div class="logo">
+          <img
+            src="./image/Abhianna.png"
+            style="height: 75px; width: 150px"
+            alt=""
+          />
+          <input type="text" placeholder="search..." class="search" />
+          <button
+            type="button"
+            class="btn btn-success"
+            style="margin-bottom: 5px"
+          >
+            search
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="nav">
+      <div class="dashboard">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            ><b>&times;</b></a
+          >
+          <br /><br />
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div id="main">
+        <button onclick="openNav()" style="height: 40px">Dashboard</button>
+      </div>
+      <div class="mid">
+        <a
+          href="file:///C:/Users/ABHINAV/Desktop/E_learning_startup/course.html"
+          ><li>My Courses</li></a
+        >
+        <a href="#"><li>Live Sessions</li></a>
+        <a href="#"><li>Achievements</li></a>
+      </div>
+      <div class="right_sign_login">
+        <button type="button" class="btn btn-primary">User</button>
+      </div>
+    </div>
+    <div class="platform"></div>
+    <div class="megaContainer">
+      <div class="left">
+        <p class="leftP"><b>Total Number of courses</b></p>
+        <div class="leftCode">
+          <div id="enrolledCourse">
+            <h1
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;
+                color: white;
+              "
+            >
+              <b>0</b>
+            </h1>
+            <p style="color: white"><b>Enrolled Courses</b></p>
+          </div>
+          <div id="completedCourse">
+            <h1
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;
+              "
+            >
+              <b>0</b>
+            </h1>
+            <p><b>Completed Courses</b></p>
+          </div>
+          <div id="courseQuestions">
+            <h1
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;
+              "
+            >
+              <b>0</b>
+            </h1>
+            <p><b>Courses Question</b></p>
+          </div>
+        </div>
+        <p class="badgeP"><b>Latest Badges</b></p>
+        <div class="badges">
+          <div id="levels"></div>
+          <div id="points"></div>
+        </div>
+      </div>
+      <div class="right">
+        <div id="course1"></div>
+        <div id="course2"></div>
+        <div id="course3"></div>
+      </div>
+    </div>
+  </body>
+</html>

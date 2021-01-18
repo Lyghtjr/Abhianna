@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>e-learning</title>
+    <script src="main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia"
+      rel="stylesheet"
+    />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Architects Daughter"
+      rel="stylesheet"
+    />
+     <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+     
+      header {
+        background-image: url("https://mocah.org/uploads/posts/5402702-hand-hold-fern-leaf-plant-green-sunlight-shadow-dark-beauty-light-of-the-sun-sun-light-human-hand-fine-art-nature-forest-black-background-black-pteridophytum-catch-public-domain-images.jpg");
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        padding-bottom: 20px;
+        font-size: 22px;
+        /*filter:drop-shadow(8px 8px 10px black);*/
+      }
+
+      .TextAnimationh1 {
+        color: white;
+        font-family: "Sofia";
+       
+        font-size: 22px;
+        filter: drop-shadow(8px 8px 10px black);
+      }
+      .container p {
+        color: white;
+        letter-spacing: 2px;
+        font-size: larger;
+        filter: drop-shadow(8px 8px 10px black);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .startleaningbutton {
+        background-color: #FFC107;
+        color: black;
+        filter: drop-shadow(8px 8px 10px black);
+        border-radius: 8px;
+        border-style:none;
+        padding: 10px;
+        margin-top:20px;
+        transition: 0.5s;
+        cursor: pointer;
+        justify-content:left;
+      }
+
+     
+      .Courseheading {
+        margin-left: 1.5em;
+      }
+      .Courseheading h1 {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .con {
+        width: 100%;
+        
+      }
+      .co {
+        margin: 2em 5em;
+        height: 150px;
+        border: 1px solid black;
+        border-radius: 25px;
+        padding: 15px;
+      }
+
+      .co i {
+        margin-top: 0.5em;
+        color: purple;
+        margin-left: 10px;
+      }
+      .product {
+        overflow: hidden;
+        white-space: nowrap;
+        display: flex;
+        height: 30%;
+        width: 100%;
+      
+      }
+     .Courseheading .product::-webkit-scrollbar {
+        display:none;
+      }
+      .ElearningCoursescard {
+        position: relative;
+        margin: 0 2.5em 2.5em 0;
+        width: 20em;
+        height: 100%;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .ElearningCoursescard img {
+        box-shadow: 2px 2px 4px grey;
+        border-radius: 2%;
+        height: 60%;
+        width: 4em;
+      }
+      .ElearningCoursescard img:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .checked {
+        color: orange;
+      }
+      /* .ElearningCoursescard img{height: 60%;width:5em;}*/
+      .fa-star {
+        font-size: 11px;
+      }
+      .f {
+        color: silver;
+      }
+      .sub {
+        color: grey;
+      }
+      .s1,
+      .b {
+        font-size: 13px;
+        color: red;
+      }
+      .fa-arrow-circle-right,
+      .fa-arrow-circle-left {
+        color: rgba(210, 200, 230, 0.9);
+        font-size: 40px;
+        margin:10px 20px;
+      }
+      .fa-arrow-circle-right:hover,
+      .fa-arrow-circle-left:hover {
+        color: grey;
+        transition: 1.02;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="col-md-12 ">
+    <!--Start of Topbar-->
+    <nav class=" mx-5 navbar navbar-expand-lg navbar-light bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-white" style="font-size:14px" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" style="font-size:14px" href="#">Popular Courses</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" style="font-size:14px" href="#">LogIn</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+<!--End of Topbar-->
+<!--Start of NavBar-->
+
+<div class="container row mx-5">
+        <div class="col-lg-3 col-md-4 col-4 col-xs-4 p-0">
+        <a class="navbar-brand" href="#">
+            <img src="./image/Abhianna.png" style="height:100px;width:150px" alt="">
+        </a>
+        </div>
+          
+             <nav class="mx-5 pb-5   navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+                   <a class="btn" style="background-color: #ffc107;margin-right:15px;color:black;" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;    <strong> All Courses</strong>
+                    </a>
+                    </li>
+                    
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 px-3 mx-3" type="search" placeholder="Search Courses" aria-label="Search">
+      
+        <a class="nav-link text-white" style="font-size:16px" href="#">Testimonials</a>
+  
+        <a class="nav-link text-white" style="font-size:16px" href="#">Blogs</a>
+      </form>
+  </div>
+</nav>
+
+               
+                  
+        </div>
+      
+        </div>
+
+<!--End of NavBar-->
+    <div class="row">
+    <div class="col-md-7 ml-5" >
+      <h1>You only have to know one Thing..</h1>
+
+     <!--Text Animation-->
+      <div class="TextAnimationh1">
+      
+        
+         <h1>
+      <span
+        class="txt-rotate"
+        data-period="2000"
+        data-rotate='[ "You Can learn anything"," For free,For everyone,Forever" ]'
+      ></span>
+    </h1>
+     <script>
+      var TxtRotate = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = "";
+        this.tick();
+        this.isDeleting = false;
+      };
+
+      TxtRotate.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) {
+          delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function () {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function () {
+        var elements = document.getElementsByClassName("txt-rotate");
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute("data-rotate");
+          var period = elements[i].getAttribute("data-period");
+          if (toRotate) {
+            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML =
+          ".txt-rotate > .wrap { border-right: 0.08em solid #fff }";
+        document.body.appendChild(css);
+      };
+    </script>
+    <!--End of Text Animation-->
+      </div>
+
+      <span  class="startleaningbutton" onclick="mainPage()" type="button" style="font-size:18px;font-weight:bold">Explore Learning</span><br>
+        
+        </div>
+        
+      <div class="container col-md-4">
+      
+        
+           <!--Login Form-->
+         <style>
+ 
+                            @media only screen and (max-width: 767px){
+                          .right-con-hed .form-control {
+                           height: 45px;
+                         padding-left: 45px;
+                           }
+                        }
+                       .newform{
+                         height:100%;
+                         width:100%;
+                         border:1px solid white;
+                         padding:10px;
+                         border-radius:25px;
+                       }
+                        
+element.style {
+}
+@media only screen and (max-width: 767px){
+.right-con-hed .form-control {
+    height: 45px;
+    padding-left: 45px;
+}}
+.right-con-hed img {
+    position: absolute;
+    left: 40px;
+    width: 24px;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.imgss {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+.right-con-hed .form-control {
+    border-radius: 0;
+    box-shadow: initial;
+    height: 40px;
+    padding-left: 55px;
+    background-repeat: no-repeat;
+    border: 1px solid #eceaee;
+    background-position: 20px center;
+    font-size: 14px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    
+    padding: 5px 10px;
+    
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+   
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    
+    text-align: start;
+    appearance: textfield;
+   
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+   
+}
+
+@media only screen and (max-width: 767px){
+.right-con-hed input[type="submit"] {
+    white-space: initial;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 400;
+    width: 100%;
+}}
+
+
+                        </style>
+                                 
+                         <div class="col-md-12 ">
+                            <section id="header-testimonial">
+                               <div class="container2">
+                                <div class="row"> 
+                                  <div class="col-md-10 mx-auto">
+   <div class="newform">
+    <div class="right-con-hed">
+            <form action="https://www.henryharvin.com/admin/api" method="POST" onsubmit="myButton.disabled = true; return true;" enctype="multipart/form-data" autocomplete="on">
+                            <input type="hidden" name="_token" value="Pkxwu8ligxVRHsvcnZKRacfGh1Ozsy2Z9tXIVggh"> 
+           <center><h3 style=" font-size: 18px;
+            color:white;"> Request more information </h3></center> 
+           
+            <div class="form-group icon-name row">
+                <div class="fildcontrig col-sm-12 col-xs-12"> <img src="https://clsite-file.s3.amazonaws.com/MBA/2020/cat-mba/nmat-online-classes/106960_name-24.png" alt="">
+                  <input class="form-control" type="text" id="name" name="name" placeholder="Name" maxlength="50">
+                </div>
+              </div>
+              <div class="form-group icon-email row">
+                <div class="fildcontrig col-sm-12 col-xs-12"> <img src="https://clsite-file.s3.amazonaws.com/MBA/2020/cat-mba/nmat-online-classes/106960_email-24.png" alt="">
+                  <input class="form-control" type="text" id="email" name="email" placeholder="Email" maxlength="50">
+                </div>
+              </div>
+              <div class="form-group icon-mobile row">
+                <div class="fildcontrig col-sm-12 col-xs-12"> <img src="https://clsite-file.s3.amazonaws.com/MBA/2020/cat-mba/nmat-online-classes/106960_mobile-24.png" alt="">
+                  <input class="form-control" type="text" id="mobile" name="mobile" placeholder="Mobile Number" maxlength="10">
+                </div>
+              </div>
+              <div class="form-group icon-city row">
+                <div class="fildcontrig col-sm-12 col-xs-12"> <img src="https://clsite-file.s3.amazonaws.com/MBA/2020/cat-mba/nmat-online-classes/106960_location-24.png" alt="">
+                  <input class="form-control" type="text" id="city" name="city" placeholder="City" maxlength="10">
+                </div>
+              </div>
+         
+              </div>
+          
+                                <input type="hidden" name="description2" class="textbox" value="Content Writing Course by Henry Harvin® Writing Academy" placeholder="" id="">
+
+                                <input type="hidden" name="academy" class="textbox" value="2" placeholder="" id="">
+                                
+                                <input type="hidden" name="source" class="textbox" value="FORM" placeholder="" id="">
+        
+                                <input type="hidden" name="slug" class="textbox" value="content-writing-course" placeholder="" id="">
+                                
+                                <input type="hidden" name="crm_course_id" class="textbox" value="CDCW" placeholder="" id="">
+        
+                                <input type="hidden" name="course_name" class="textbox" value="Content Writing Course" placeholder="" id="">
+                               
+                                <div class="form-group row">
+                                    <div class="fildcontrig fromsubmut  col-12 text-center">
+                                      <input class="btn1 btn-warning btn-block text-center" type="submit" id="btn" value="Submit">
+                                     
+                                    </div>
+                                  </div>
+                                  
+         
+          </form>
+        </div>
+  
+    </div>  
+</div>
+</div>
+</div>
+<br>
+</section>
+</div>
+
+<!--End of Form-->
+ 
+      </div>
+      </div>
+    </header>
+
+      <!--new UP start-->
+
+<style>
+@media only screen and (max-width: 991px) and (min-width: 768px)
+{.few_info_below_banner .container {
+    padding: 0;
+}}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+.few_info_below_banner .card_light_box {
+    padding: 0 5px;
+}}
+@media (min-width: 768px){
+.col-sm-4 {
+    width: 33.33333333%;
+}}
+@media only screen and (max-width: 767px) and (min-width: 300px)
+{.few_info_below_banner .card_light_box a span.knowmoretxt {
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+}}
+.few_info_below_banner {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+}
+.few_info_below_banner .card_light_box a {
+    display: inline-flex;
+    background: #ffffff;
+    height: 90px;
+    border-radius: 2px;
+    box-shadow: 0 0 15px 1px rgba(0,0,0,0.15);
+    align-items: center;
+    justify-content: space-between;
+   padding:0 10px;
+    width: 100%;
+    text-decoration:none;
+}
+span.text {
+    font-size: 14px;
+    width: 56%;
+    text-decoration:none;
+    margin-left:10px;
+}
+.few_info_below_banner .card_light_box a span.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #404040;
+    display: inline-block;
+    width: 65%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.few_info_below_banner .card_light_box a span.knowmoretxt {
+    font-size: 12px;
+    font-weight: 800;
+    text-align: right;
+    color: #0c5397;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 35%;
+}
+</style>
+
+<section class="container-fluid few_info_below_banner">
+    <div class="container">
+        <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 card_light_box ga_job_role_card">
+                        <a href="#">
+                        <i class="fas fa-desktop" style="font-size: 22px"></i>
+                                <span class="text" data-position="1"><b>10,000 online courses </b><br>Enjoy a variety of fresh topics<br></span>
+                                <span class="knowmoretxt">Know More <i class="fas fa-angle-double-right"></i></span>
+                        </a>    
+                </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 card_light_box ga_job_role_card">
+                        <a href="#">
+                        <i class="fas fa-award" style="font-size: 22px"></i>
+                                <span class="text" data-position="2"><b>Expert instruction</b><br>Find the right instructor for you</span>
+                                <span class="knowmoretxt">Know More <i class="fas fa-angle-double-right"></i></span>
+                        </a>    
+                </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 card_light_box ga_job_role_card">
+                        <a href="#">
+                        <i class="fas fa-infinity" style="font-size: 22px"></i>
+                                <span class="text" data-position="3"> <b>Lifetime access</b><br />Learn on your schedule</span>
+                                <span class="knowmoretxt">Know More <i class="fas fa-angle-double-right"></i></span>
+                        </a>    
+                </div>
+                
+        </div>
+    </div>
+</section>
+        <!--End of new UP-->
+<br><br><br>
+  <!--  <section>
+      <div class="con row mx-2  ">
+        <div class="co col-md-2 mx-auto">
+          <i class="fas fa-desktop" style="font-size: 22px"></i>
+          <p>
+            <b>10,000 online courses</b><br />Enjoy a variety of fresh topics
+          </p>
+        </div>
+        <div class="co col-md-2 mx-auto">
+          <i class="fas fa-award" style="font-size: 22px"></i>
+          <p>
+            <b>Expert instruction</b><br />Find the right instructor for you
+          </p>
+        </div>
+        <div class="co col-md-2 mx-auto">
+          <i class="fas fa-infinity" style="font-size: 22px"></i>
+          <p style="margin-right: 20px">
+            <b>Lifetime access</b><br />Learn on your schedule
+          </p>
+        </div>
+      </div>
+      <hr width="99%" style="margin-top: -1.3em" />
+    </section>-->
+
+    <section class=" col-lg-11 mx-auto">
+    
+      <div class="Courseheading">
+        <h1>The World's largest selection of courses</h1>
+        <p>
+          Choose from 150,000 online video courses with new additions published
+          every month<br />
+          <span
+            ><i
+              class="fas fa-arrow-circle-right"
+              onclick="fasright()"
+              style="float: right"
+            ></i
+          ></span>
+          <span
+            ><i
+              class="fas fa-arrow-circle-left"
+              onclick="fasleft()"
+              style="float: left"
+            ></i
+          ></span>
+        </p>
+      </div>
+      <div class="product " id="product">
+        <div class="ElearningCoursescard" id="ElearningCoursescard">
+          <img
+            src="https://img-a.udemycdn.com/course/240x135/648826_f0e5_4.jpg"
+            style="width: 100%"
+          />
+          <p>
+            <b>The Complete Financial Analyst<br />Course 2020</b><br /><sub
+              >365 Careers</sub
+            ><br />
+            <span><b class="b">4.0</b></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star f"></span><span class="s1">(4,000)</span>
+            <br /><span>$19.99 <del> $9,600</del></span>
+          </p>
+        </div>
+        <div class="ElearningCoursescard">
+          <img
+            src="https://img-a.udemycdn.com/course/240x135/613808_3c1c_6.jpg"
+            style="width: 100%"
+          />
+          <p>
+            <b>The Complete Financial Analyst<br />Course 2020</b><br /><sub
+              >365 Careers</sub
+            ><br />
+            <span><b class="b">4.0</b></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star f"></span><span class="s1">(4,000)</span>
+            <br /><span>$19.99 <del> $9,600</del></span>
+          </p>
+        </div>
+        <div class="ElearningCoursescard">
+          <img
+            src="https://img-a.udemycdn.com/course/240x135/648826_f0e5_4.jpg"
+            style="width: 100%"
+          />
+          <p>
+            <b>The Complete Financial Analyst<br />Course 2020</b><br /><sub
+              >365 Careers</sub
+            ><br />
+            <span><b class="b">4.0</b></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star f"></span><span class="s1">(4,000)</span>
+            <br /><span>$19.99 <del> $9,600</del></span>
+          </p>
+        </div>
+        <div class="ElearningCoursescard">
+          <img
+            src="https://img-a.udemycdn.com/course/240x135/648826_f0e5_4.jpg"
+            style="width: 100%"
+          />
+          <p>
+            <b>The Complete Financial Analyst<br />Course 2020</b><br /><sub
+              >365 Careers</sub
+            ><br />
+            <span><b class="b">4.0</b></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star f"></span><span class="s1">(4,000)</span>
+            <br /><span>$19.99 <del> $9,600</del></span>
+          </p>
+        </div>
+        <div class="ElearningCoursescard">
+          <img
+            src="https://img-a.udemycdn.com/course/240x135/648826_f0e5_4.jpg"
+            style="width: 100%"
+          />
+          <p>
+            <b>The Complete Financial Analyst<br />Course 2020</b><br /><sub
+              >365 Careers</sub
+            ><br />
+            <span><b class="b">4.0</b></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star f"></span><span class="s1">(4,000)</span>
+            <br /><span>$19.99 <del> $9,600</del></span>
+          </p>
+        </div>
+        <div class="ElearningCoursescard">
+          <img
+            src="https://img-a.udemycdn.com/course/240x135/648826_f0e5_4.jpg"
+            style="width: 100%"
+          />
+          <p>
+            <b>The Complete Financial Analyst<br />Course 2020</b><br /><sub
+              >365 Careers</sub
+            ><br />
+            <span><b class="b">4.0</b></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star f"></span><span class="s1">(4,000)</span>
+            <br /><span>$19.99 <del> $9,600</del></span>
+          </p>
+        </div>
+        <div class="ElearningCoursescard">
+          <img
+            src="https://img-a.udemycdn.com/course/240x135/648826_f0e5_4.jpg"
+            style="width: 100%"
+          />
+          <p>
+            <b>The Complete Financial Analyst<br />Course 2020</b><br /><sub
+              >365 Careers</sub
+            ><br />
+            <span><b class="b">4.0</b></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star f"></span><span class="s1">(4,000)</span>
+            <br /><span>$19.99 <del> $9,600</del></span>
+          </p>
+        </div>
+      </div>
+      
+    </section>
+    <!--Starting of Top Categories-->
+ <style>
+      @media only screen and (max-width: 767px) and (min-width: 300px) {
+        .home_page_title_section {
+          font-size: 16px;
+          margin: 15px 0 15px;
+        }
+      }
+      @media only screen and (max-width: 767px) and (min-width: 300px) {
+        .discover-top-categories ul li {
+          width: 100%;
+          height: auto;
+          margin-bottom: 0;
+        }
+      }
+      @media only screen and (max-width: 767px) and (min-width: 300px) {
+        .discover-top-categories ul li a {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          padding: 18px 20px;
+        }
+      }
+      @media only screen and (max-width: 767px) and (min-width: 300px) {
+        .discover-top-categories ul li a label {
+          margin: 0 0 0 15px;
+          text-align: left;
+        }
+      }
+      .home_page_title_section {
+        font-size: 22px;
+        font-weight: 600;
+        color: #404040;
+        display: inline-block;
+        width: 100%;
+        margin: 10px 0 25px;
+      }
+      .discover-top-categories {
+        height: auto;
+      }
+      .discover-top-categories ul {
+        list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 0;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0 -14px 0 -12px;
+      }
+      .discover-top-categories ul li {
+        width: 135px;
+        height: 140px;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.15);
+        background-color: #ffffff;
+        margin: 13px;
+        cursor: pointer;
+        text-decoration: none;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      .discover-top-categories ul li a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        padding: 24px 15px 30px;
+      }
+      .discover-top-categories ul li a i {
+        font-size: 40px;
+        text-decoration: none;
+      }
+      .discover-top-categories ul li a label {
+        margin-top: 25px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #404040;
+        margin-bottom: 0;
+      }
+      .more_button_show {
+        color: #0c5397;
+        display: block;
+        text-align: center;
+        padding: 10px 20px;
+        margin: 19px 0px 0;
+        font-size: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+ 
+    <div class="container">
+      <h2 class="home_page_title_section">Discover Top Categories</h2>
+      <div class="discover-top-categories">
+        <ul class="less_element">
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #ff8f9d" class="fas fa-graduation-cap"></i>
+              <label>PG Programs</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #6e97ff" class="fab fa-cloudversify"></i>
+              <label>Cloud Computing</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #91c653" class="fas fa-infinity"></i>
+              <label>DevOps</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #fea101" class="far fa-lightbulb"></i>
+              <label>BI and Visualization</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #7bdcfc" class="fab fa-react"></i>
+              <label>React</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #c891f8" class="fas fa-chart-line"></i>
+              <label>Big Data</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #ff8f9d" class="fas fa-scroll"></i>
+              <label>Project Management and Methodologies</label>
+            </a>
+          </li>
+        </ul>
+           <div class="more_elementHide hide">
+        <ul class="more_element">
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #ff8f9d" class="fal fa-globe"></i>
+              <label>Programming &amp; Frameworks</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #6e97ff" class="fas fa-screwdriver"></i>
+              <label>Software Testing</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #91c653" class="fas fa-code"></i>
+              <label>Frontend Development</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #fea101" class="fas fa-robot"></i>
+              <label>Robotic Process Automation</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #7bdcfc" class="fas fa-bullhorn"></i>
+              <label>Digital Marketing</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #c891f8" class="fas fa-cog"></i>
+              <label>Data Warehousing and ETL</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #ff8f9d" class="fas fa-brain"></i>
+              <label>Artificial Intelligence</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #6e97ff" class="fas fa-fingerprint"></i>
+              <label>Cyber Security</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #91c653" class="fas fa-mobile-alt"></i>
+              <label>Mobile Development</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #fea101" class="fas fa-database"></i>
+              <label>Databases</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #c891f8" class="fab fa-windows"></i>
+              <label>Operating Systems</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #7bdcfc" class="fab fa-hive"></i>
+              <label>Blockchain</label>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#">
+              <i style="color: #ff8f9d" class="fas fa-vector-square"></i>
+              <label>Architecture &amp; Design Patterns</label>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <span class="more_button_show" onclick="showmoreElementhide()">View More</span>
+      </div>
+    </div>
+
+    <script>
+    function showmoreElementhide() {
+     const more_button_show=document.querySelector(".more_button_show");
+     const more_elementHide=document.querySelector(".more_elementHide");
+     if(more_button_show.innerHTML==="VIEW MORE"){
+     more_elementHide.classList.remove('hide');
+     more_button_show.innerHTML="VIEW LESS";
+    }else{
+       more_elementHide.classList.add('hide');
+     more_button_show.innerHTML="VIEW MORE";
+    }
+    }
+    </script>
+    
+    <!--Ending Of Top Categories-->
+      <div
+        style="
+          background-image: url(https://img.freepik.com/free-vector/colorful-gradient-liquid-shapes-background_23-2148250143.jpg?size=626&ext=jpg);
+          color: white;
+          opacity: 0.9;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin:2em 0 ;
+          height: 13em;
+          padding: 2em 0 2em 0;
+        "
+      >
+        <center>
+          <h1>Get personal learning recommendations</h1>
+          <h4>Answer a few questions for your top picks</h4>
+          <button
+            style="
+              border: 1.5px solid white;
+              padding: 1em;
+              background: transparent;
+              color: white;
+            "
+          >
+            Get Started
+          </button>
+        </center>
+      </div>
+    </section>
+<!--Starting of WHY ABHIANNA-->
+
+<style>
+      #lms-features .lms-feature-text {
+        padding: 1rem;
+      }
+      #lms-features .lms-feature img {
+        max-height: 120px;
+      }
+      #lms-features .lms-feature h4 {
+        margin-top: 20px;
+        font-size: 1.2rem;
+      }
+      #lms-features .lms-feature-image {
+        padding: 0rem;
+        background-color: #fff;
+        /* border-bottom: 2px dashed #4f2d7f; */
+      }
+      #lms-features .lms-feature {
+        text-align: center;
+        background: #fff;
+        /* padding: 2rem; */
+        /* box-shadow: 0 7px 15px 0 rgba(0,0,0,0.12); */
+        margin-bottom: 2rem;
+      }
+      #lms-features h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+    </style>
+    <section id="lms-features" class="wow slideInLeft" data-wow-delay="1s">
+      <div class="container">
+        <h2>WHY ABHIANNA ?</h2>
+        <br />
+        <div class="row">
+          <div class="col-md-4 col-6">
+            <div class="lms-feature">
+              <div class="lms-feature-image">
+                <img
+                  src="https://www.henryharvin.com/home2-assets/images/istockphoto-1171911961-612x612.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="lms-feature-text">
+                <strong>Trainers</strong>
+                <h6>
+                  Industry Deep Rooted Trainers with extensive training
+                  experience
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="lms-feature">
+              <div class="lms-feature-image">
+                <img
+                  src="https://www.henryharvin.com/home2-assets/images/images.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="lms-feature-text">
+                <strong>Content + Technology</strong>
+
+                <h6>
+                  Advanced E-Learning Portal(LMS) with Interactive Content
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="lms-feature">
+              <div class="lms-feature-image">
+                <img
+                  src="https://www.henryharvin.com/home2-assets/images/sss-online-registration-form.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="lms-feature-text">
+                <strong>Membership Program</strong>
+                <h6>
+                  Support to brushing up learnings + handhold implementation
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="lms-feature">
+              <div class="lms-feature-image">
+                <img
+                  src="https://www.henryharvin.com/home2-assets/images/rewire.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="lms-feature-text">
+                <strong>One to One Support</strong>
+                <h6>On-demand consulting + coaching</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="lms-feature">
+              <div class="lms-feature-image">
+                <img
+                  src="https://sgp1.digitaloceanspaces.com/hh-certificates/images/1603175510istockphoto-1254583061-612x612.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="lms-feature-text">
+                <strong>Clientele</strong>
+                <h6>Trusted by 1100+ Top Corporates & 60+ Premium Colleges</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="lms-feature">
+              <div class="lms-feature-image">
+                <img
+                  src="https://sgp1.digitaloceanspaces.com/hh-certificates/images/1603175530virtual-classrooms-and-covid19-1024x576.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="lms-feature-text">
+                <strong>Pedagogy</strong>
+                <h6>GCAO Learning Model focused on implementation</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--End of WHY ABHIANNA-->
+
+<!--Review-->
+
+   
+<!--Starting of Picreel-->
+     <style>
+      .hide {
+        display: none;
+      }
+      #ExitIntentPop {
+        position: fixed;
+        top: 0%;
+        z-index: 2147483640;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 1;
+      }
+
+      .exitIntentcard0 {
+        box-shadow: 0px 4px 8px 0px #757575;
+        width: 675px;
+        height: 100%;
+        border-radius: 0px;
+      }
+
+      .exitIntentcard2 {
+        width: 300px;
+        height: 470px;
+        display: block;
+        padding: 0 30px;
+      }
+
+      .exitIntentimage {
+        height: 100%;
+        margin-left: 20px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 300px;
+        transform: translate(-50%, 0);
+      }
+
+      ::placeholder {
+        color: #000000;
+        text-align: center;
+        background: #ffffff;
+      }
+
+      .exitIntentinput,
+      textarea {
+        padding: 10px 12px 10px 12px;
+        border: 1px solid #000;
+        border-radius: 2px;
+        margin-bottom: 5px;
+        margin-top: 2px;
+        width: 100%;
+        box-sizing: border-box;
+        color: #2c3e50;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+
+      .exitIntentinput:focus,
+      textarea:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border: 1px solid #304ffe;
+        outline-width: 0;
+      }
+
+      #exitIntentsubmit-button.submit.btn-bg-color {
+        color: #ffffff;
+        font: 16px "Open Sans", sans-serif;
+        background: linear-gradient(97deg, #f5a623, #f76b1c);
+        margin: 8px 0px 0px;
+        padding: 1px 6px 0px;
+        line-height: 53px;
+        font-weight: 700;
+        display: inline-block;
+        width: 270px;
+        text-decoration: none;
+        transition: top 100ms;
+
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        height: 53px;
+      }
+      @media Screen and (max-width: 991px) {
+        #ExitIntentPop {
+          display: none;
+        }
+      }
+    </style>
+ 
+    <div class="hide" id="ExitIntentPop">
+      <div class="container-fluid mt-4 pt-5 col-md-6 mx-auto">
+        <div class="card exitIntentcard0 border-0">
+          <div class="row d-flex">
+            <div class="col-lg-6">
+              <div class="card1 exitIntentimage">
+                <div class="row justify-content-center border-line">
+                  <img
+                    src="https://sgp1.digitaloceanspaces.com/hh-certificates/images/1606193800ezgif.com-gif-maker (7).webp"
+                    style="height: 469px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <button
+                style="margin: 5px; color: black"
+                type="button"
+                onclick="closeup()"
+                class="close"
+                data-dismiss="container-fluid"
+              >
+                &times;
+              </button>
+              <div class="exitIntentcard2 card border-0">
+                <div class="row exitIntenttext_center">
+                  <div
+                    style="
+                      color: #000000;
+                      font: 18px 'Open Sans', sans-serif;
+                      text-align: center;
+                      margin: 90px 0px 0px 20px;
+                      font-weight: bold;
+                    "
+                  >
+                    Interested in this Course?
+                  </div>
+                </div>
+                <div class="row exitIntenttext_center">
+                  <div
+                    data-em="text-line-2"
+                    class="text-line-2 text-color"
+                    style="
+                      font-size: 14px;
+                      margin-top: 5px;
+                      margin-bottom: 5px;
+                      color: black;
+                      text-align: center;
+                    "
+                  >
+                    Get Course Membership Worth Rs 6000/- <br />For Free
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="template-inputs">
+                    <input
+                      class="exitIntentinput"
+                      name="phone"
+                      type="tel"
+                      class="required"
+                      placeholder="Enter phone here"
+                      data-required="Phone is required"
+                    />
+                    <input
+                      class="exitIntentinput"
+                      type="email"
+                      name="email"
+                      class="input"
+                      placeholder="Enter email here"
+                      value=""
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <button
+                    data-em="button"
+                    type="submit"
+                    class="submit btn-bg-color"
+                    id="exitIntentsubmit-button"
+                    target=""
+                  >
+                    Get Free Course Membership
+                  </button>
+                </div>
+                <div class="row text_center">
+                  <p style="font-size: 12px; color: #474a48; margin: 12px 0px">
+                    Our Career Advisor will give you a call shortly
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function closeup() {
+        const ExitIntentPop = document.querySelector("#ExitIntentPop");
+        ExitIntentPop.classList.add("hide");
+      }
+      document.addEventListener(
+        "mouseleave",
+        function (e) {
+          if (e.clientY < 0) {
+            if (typeof Storage !== "undefined") {
+              if (!localStorage.ExitIntentPop) {
+                localStorage.ExitIntentPop = final;
+                const ExitIntentPop = document.querySelector("#ExitIntentPop");
+                var final = ExitIntentPop.classList.remove("hide");
+              } else {
+              }
+            } else {
+              alert("not supported");
+            }
+          }
+        },
+        false
+      );
+      /*Delete local storage*/
+      setInterval(deletelocalstorage, 100000); /*timeout:1 to 2 minutes*/
+      function deletelocalstorage() {
+        localStorage.removeItem("ExitIntentPop");
+      }
+    </script>
+    <!--End of Picreel-->
+    <!-- Starting Provely-->
+
+    <style>
+     
+      .Provelypostionleftbottom {
+        position: fixed;
+        z-index: 2147483645;
+        left: 40px;
+        bottom: 75px;
+        width: 300px;
+        height: 70px;
+      }
+
+      .Provelypostionleftbottomimg {
+        border-radius: 50%;
+        height: 45px;
+      }
+      #ExitIntentProvely {
+        animation: shake 0.5s;
+        animation-iteration-count: 2;
+      }
+
+      @keyframes shake {
+        0%,
+        90% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+        10%,
+        80% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20%,
+        70% {
+          transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30%,
+        60% {
+          transform: translate(3px, 2px) rotate(0deg);
+        }
+        40%,
+        50% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        .Provelypostionleftbottom {
+          left: 15px;
+          position: fixed;
+        }
+      }
+    </style>
+
+    <script>
+     
+      var ProvelState = ["Delhi", "Maharashtra", "Bangalore", "Haryana"];
+      var ProvelTimeHour = [
+        "a",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+      ];
+      setInterval(popupProvely, 20000);
+      function popupProvely() {
+        const ExitIntentProvely = document.querySelector("#ExitIntentProvely");
+        var finalProvely = ExitIntentProvely.classList.remove("hide");
+        var ProvelyStaterandomItem =
+          ProvelState[Math.floor(Math.random() * ProvelState.length)];
+        var ProvelyTimeHourrandomItem =
+          ProvelTimeHour[Math.floor(Math.random() * ProvelTimeHour.length)];
+        document.getElementById(
+          "ProvelyCountry"
+        ).innerHTML = ProvelyStaterandomItem;
+        document.getElementById(
+          "ProvelyTimeHour"
+        ).innerHTML = ProvelyTimeHourrandomItem;
+        setTimeout(closeProvely, 10000);
+        function closeProvely() {
+          const ExitIntentProvely = document.querySelector(
+            "#ExitIntentProvely"
+          );
+          var finalProvely = ExitIntentProvely.classList.add("hide");
+        }
+      }
+    </script>
+
+    <section>
+      <div
+        class="card flex-row flex-wrap Provelypostionleftbottom hide"
+        id="ExitIntentProvely"
+      >
+        <div class="card-header border-0">
+          <img
+            class="live_preview_image Provelypostionleftbottomimg"
+            src=" https://s3.amazonaws.com/provely-public/images/ico-7.png"
+            alt=""
+            style="background: rgb(255, 255, 255)"
+          />
+        </div>
+        <div class="card-block px-2 mt-2">
+          <span
+            class="card-title"
+            style="font: 12px Poppins, sans-serif; font-weight: bold"
+            >Someone from <span id="ProvelyCountry">India</span></span
+          >
+          <p
+            class="desc-heading_foot"
+            style="font: 12px Poppins, sans-serif; margin: -3px 0px 0px"
+          >
+            Just purchased a course
+          </p>
+          <span
+            class="time px-2"
+            style="
+              color: #909090;
+              font: 11px Poppins, sans-serif;
+              margin: 8px 0px 0px -8px;
+            "
+            id="hoursago"
+            ><span id="ProvelyTimeHour">1</span> hour ago</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--End of Provely-->
+
+    <!--ChatBot-->
+    <style>
+      #Smallchat .Messages,
+      #Smallchat .Messages_list {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+      .chat_close_icon {
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px;
+        position: absolute;
+        right: 12px;
+        z-index: 9;
+      }
+      .chat_on {
+        position: fixed;
+        z-index: 10;
+        right: 0px;
+        bottom: 0px;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        padding: 9px;
+        cursor: pointer;
+        display: block;
+      }
+
+
+.chat_on:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 120px;
+  height: 120px;
+  background: #AF7AC5;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+
+.chat_on:hover:after {
+  background-color: darken(#AF7AC5 , 10%);
+}
+
+
+
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+   
+      /*
+#Smallchat,#Smallchat * {
+ box-sizing:border-box; 
+ -webkit-font-smoothing:antialiased;
+ -moz-osx-font-smoothing:grayscale;
+ -webkit-tap-highlight-color:transparent
+}
+*/
+      #Smallchat .Layout {
+        pointer-events: auto;
+        box-sizing: content-box !important;
+        z-index: 999999999;
+        position: fixed;
+        bottom: 20px;
+        min-width: 50px;
+        max-width: 300px;
+        max-height: 30px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        border-radius: 50px;
+        box-shadow: 5px 0 20px 5px rgba(0, 0, 0, 0.1);
+        -webkit-animation: appear 0.15s cubic-bezier(0.25, 0.25, 0.5, 1.1);
+        animation: appear 0.15s cubic-bezier(0.25, 0.25, 0.5, 1.1);
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        -webkit-transition: right 0.1s cubic-bezier(0.25, 0.25, 0.5, 1),
+          bottom 0.1s cubic-bezier(0.25, 0.25, 0.5, 1),
+          min-width 0.2s cubic-bezier(0.25, 0.25, 0.5, 1),
+          max-width 0.2s cubic-bezier(0.25, 0.25, 0.5, 1),
+          min-height 0.2s cubic-bezier(0.25, 0.25, 0.5, 1),
+          max-height 0.2s cubic-bezier(0.25, 0.25, 0.5, 1),
+          border-radius 50ms cubic-bezier(0.25, 0.25, 0.5, 1) 0.15s,
+          background-color 50ms cubic-bezier(0.25, 0.25, 0.5, 1) 0.15s,
+          color 50ms cubic-bezier(0.25, 0.25, 0.5, 1) 0.15s;
+        transition: right 0.1s cubic-bezier(0.25, 0.25, 0.5, 1),
+          bottom 0.1s cubic-bezier(0.25, 0.25, 0.5, 1),
+          min-width 0.2s cubic-bezier(0.25, 0.25, 0.5, 1),
+          max-width 0.2s cubic-bezier(0.25, 0.25, 0.5, 1),
+          min-height 0.2s cubic-bezier(0.25, 0.25, 0.5, 1),
+          max-height 0.2s cubic-bezier(0.25, 0.25, 0.5, 1),
+          border-radius 50ms cubic-bezier(0.25, 0.25, 0.5, 1) 0.15s,
+          background-color 50ms cubic-bezier(0.25, 0.25, 0.5, 1) 0.15s,
+          color 50ms cubic-bezier(0.25, 0.25, 0.5, 1) 0.15s;
+      }
+
+      #Smallchat .Layout-right {
+        right: 20px;
+      }
+
+      #Smallchat .Layout-open {
+        overflow: hidden;
+        min-width: 300px;
+        max-width: 300px;
+        height: 500px;
+        max-height: 500px;
+        border-radius: 10px;
+        color: #fff;
+        -webkit-transition: right 0.1s cubic-bezier(0.25, 0.25, 0.5, 1),
+          bottom 0.1s cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          min-width 0.2s cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          max-width 0.2s cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          max-height 0.2s cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          min-height 0.2s cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          border-radius 0ms cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          background-color 0ms cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          color 0ms cubic-bezier(0.25, 0.25, 0.5, 1.1);
+        transition: right 0.1s cubic-bezier(0.25, 0.25, 0.5, 1),
+          bottom 0.1s cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          min-width 0.2s cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          max-width 0.2s cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          max-height 0.2s cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          min-height 0.2s cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          border-radius 0ms cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          background-color 0ms cubic-bezier(0.25, 0.25, 0.5, 1.1),
+          color 0ms cubic-bezier(0.25, 0.25, 0.5, 1.1);
+      }
+
+      #Smallchat .Layout-expand {
+        height: 500px;
+        min-height: 500px;
+        display: none;
+      }
+      #Smallchat .Layout-mobile {
+        bottom: 10px;
+      }
+      #Smallchat .Layout-mobile.Layout-open {
+        width: calc(100% - 20px);
+        min-width: calc(100% - 20px);
+      }
+      #Smallchat .Layout-mobile.Layout-expand {
+        bottom: 0;
+        height: 100%;
+        min-height: 100%;
+        width: 100%;
+        min-width: 100%;
+        border-radius: 0 !important;
+      }
+      @-webkit-keyframes appear {
+        0% {
+          opacity: 0;
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        to {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      @keyframes appear {
+        0% {
+          opacity: 0;
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        to {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      #Smallchat .Messenger_messenger {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        min-width: 300px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      #Smallchat .Messenger_header,
+      #Smallchat .Messenger_messenger {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      #Smallchat .Messenger_header {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 40px;
+        height: 40px;
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+      }
+
+      #Smallchat .Messenger_header h4 {
+        opacity: 0;
+        font-size: 16px;
+        -webkit-animation: slidein 0.15s 0.3s;
+        animation: slidein 0.15s 0.3s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
+
+      #Smallchat .Messenger_prompt {
+        margin: 0;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      @-webkit-keyframes slidein {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+        }
+        to {
+          opacity: 1;
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      @keyframes slidein {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+        }
+        to {
+          opacity: 1;
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      #Smallchat .Messenger_content {
+        height: 450px;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: #fff;
+      }
+      #Smallchat .Messages {
+        position: relative;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 10px;
+        background-color: #fff;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      #Smallchat .Input {
+        position: relative;
+        width: 100%;
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        padding-top: 17px;
+        padding-bottom: 15px;
+        color: #96aab4;
+        background-color: #fff;
+        border-top: 1px solid #e6ebea;
+      }
+      #Smallchat .Input-blank .Input_field {
+        max-height: 20px;
+      }
+      #Smallchat .Input_field {
+        width: 100%;
+        resize: none;
+        border: none;
+        outline: none;
+        padding: 0;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-left: 20px;
+        padding-right: 75px;
+        background-color: transparent;
+        font-size: 16px;
+        line-height: 20px;
+        min-height: 20px !important;
+      }
+      #Smallchat .Input_button-emoji {
+        right: 45px;
+      }
+      #Smallchat .Input_button {
+        position: absolute;
+        bottom: 15px;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      #Smallchat .Input_button-send {
+        right: 15px;
+      }
+      #Smallchat .Input-emoji .Input_button-emoji .Icon,
+      #Smallchat .Input_button:hover .Icon {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+      }
+      #Smallchat .Input-emoji .Input_button-emoji .Icon path,
+      #Smallchat .Input_button:hover .Icon path {
+        fill: #2c2c46;
+      }
+    </style>
+    
+  
+    <div class="container">
+      <div class="row">
+        <div id="Smallchat">
+          <div
+            class="Layout Layout-open Layout-expand Layout-right"
+            style="
+              background-color: #3f51b5;
+              color: rgb(255, 255, 255);
+              opacity: 5;
+              border-radius: 10px;
+            "
+          >
+            <div class="Messenger_messenger">
+              <div
+                class="Messenger_header"
+                style="
+                  background-color: rgb(22, 46, 98);
+                  color: rgb(255, 255, 255);
+                "
+              >
+                <h4 class="Messenger_prompt">How can we help you?</h4>
+                <span class="chat_close_icon"
+                  ><i class="fa fa-window-close" aria-hidden="true"></i
+                ></span>
+              </div>
+              <div class="Messenger_content">
+                <div class="Messages">
+                  <div class="Messages_list"></div>
+                </div>
+                <div class="Input Input-blank">
+                  <textarea
+                    class="Input_field"
+                    placeholder="Send a message..."
+                    style="height: 20px"
+                  ></textarea>
+                  <button class="Input_button Input_button-emoji">
+                    <div class="Icon" style="width: 18px; height: 18px">
+                      <svg
+                        width="56px"
+                        height="56px"
+                        viewBox="1332 47 56 56"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        style="width: 18px; height: 18px"
+                      >
+                        <g
+                          id="emoji"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                          transform="translate(1332.000000, 47.000000)"
+                        >
+                          <path
+                            d="M28,56 C12.536027,56 0,43.463973 0,28 C0,12.536027 12.536027,0 28,0 C43.463973,0 56,12.536027 56,28 C56,43.463973 43.463973,56 28,56 Z M28,50 C40.1502645,50 50,40.1502645 50,28 C50,15.8497355 40.1502645,6 28,6 C15.8497355,6 6,15.8497355 6,28 C6,40.1502645 15.8497355,50 28,50 Z"
+                            id="Oval-8"
+                            fill="#96AAB4"
+                            fill-rule="nonzero"
+                          ></path>
+                          <path
+                            d="M28,47 C18.0588745,47 10,38.9411255 10,29 C10,27.5224898 11.5469487,26.5550499 12.8754068,27.2017612 C13.0116063,27.2662365 13.0926181,27.3037345 13.1866998,27.3464814 C13.4611235,27.4711684 13.7819537,27.6111958 14.1451774,27.7627577 C15.1908595,28.199088 16.3591406,28.6365764 17.6173846,29.0449298 C21.1841638,30.2025005 24.7379224,30.8945075 28,30.8945075 C31.2620776,30.8945075 34.8158362,30.2025005 38.3826154,29.0449298 C39.6408594,28.6365764 40.8091405,28.199088 41.8548226,27.7627577 C42.2180463,27.6111958 42.5388765,27.4711684 42.8133002,27.3464814 C42.9073819,27.3037345 42.9883937,27.2662365 43.0558366,27.2344634 C44.4530513,26.5550499 46,27.5224898 46,29 C46,38.9411255 37.9411255,47 28,47 Z M28,43 C34.6510529,43 40.2188483,38.3620234 41.6456177,32.1438387 C40.9980758,32.3847069 40.320642,32.6213409 39.6173846,32.8495777 C35.6841638,34.1260741 31.7379224,34.8945075 28,34.8945075 C24.2620776,34.8945075 20.3158362,34.1260741 16.3826154,32.8495777 C15.679358,32.6213409 15.0019242,32.3847069 14.3543823,32.1438387 C15.7811517,38.3620234 21.3489471,43 28,43 Z"
+                            id="Oval-8"
+                            fill="#96AAB4"
+                            fill-rule="nonzero"
+                          ></path>
+                          <path
+                            d="M19,15 L19,20 C19,21.1045695 19.8954305,22 21,22 C22.1045695,22 23,21.1045695 23,20 L23,15 C23,13.8954305 22.1045695,13 21,13 C19.8954305,13 19,13.8954305 19,15 Z"
+                            id="Line"
+                            fill="#96AAB4"
+                            fill-rule="nonzero"
+                          ></path>
+                          <path
+                            d="M32,15 L32,20 C32,21.1045695 32.8954305,22 34,22 C35.1045695,22 36,21.1045695 36,20 L36,15 C36,13.8954305 35.1045695,13 34,13 C32.8954305,13 32,13.8954305 32,15 Z"
+                            id="Line-Copy-2"
+                            fill="#96AAB4"
+                            fill-rule="nonzero"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
+                  <button class="Input_button Input_button-send">
+                    <div class="Icon" style="width: 18px; height: 18px">
+                      <svg
+                        width="57px"
+                        height="54px"
+                        viewBox="1496 193 57 54"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        style="width: 18px; height: 18px"
+                      >
+                        <g
+                          id="Group-9-Copy-3"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                          transform="translate(1523.000000, 220.000000) rotate(-270.000000) translate(-1523.000000, -220.000000) translate(1499.000000, 193.000000)"
+                        >
+                          <path
+                            d="M5.42994667,44.5306122 L16.5955554,44.5306122 L21.049938,20.423658 C21.6518463,17.1661523 26.3121212,17.1441362 26.9447801,20.3958097 L31.6405465,44.5306122 L42.5313185,44.5306122 L23.9806326,7.0871633 L5.42994667,44.5306122 Z M22.0420732,48.0757124 C21.779222,49.4982538 20.5386331,50.5306122 19.0920112,50.5306122 L1.59009899,50.5306122 C-1.20169244,50.5306122 -2.87079654,47.7697069 -1.64625638,45.2980459 L20.8461928,-0.101616237 C22.1967178,-2.8275701 25.7710778,-2.81438868 27.1150723,-0.101616237 L49.6075215,45.2980459 C50.8414042,47.7885641 49.1422456,50.5306122 46.3613062,50.5306122 L29.1679835,50.5306122 C27.7320366,50.5306122 26.4974445,49.5130766 26.2232033,48.1035608 L24.0760553,37.0678766 L22.0420732,48.0757124 Z"
+                            id="sendicon"
+                            fill="#96AAB4"
+                            fill-rule="nonzero"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+      // CHAT BOOT MESSENGER////////////////////////
+
+      $(document).ready(function () {
+        $(".chat_on").click(function () {
+          $(".Layout").toggle();
+          $(".chat_on").hide(300);
+        });
+
+        $(".chat_close_icon").click(function () {
+          $(".Layout").hide();
+          $(".chat_on").show(300);
+        });
+      });
+    </script>
+          <!--CHAT ON BUTTON STRART-->
+          <div class="chat_on">
+            <img src="https://static-v.tawk.to/a-v3/images/bubbles/70-br.svg"
+      style="width: 163px; height: 133px"
+    />
+          </div>
+          <!--CHAT ON BUTTON END-->
+        </div>
+      </div>
+    </div>
+    <!--End of ChatBot-->
+  </body>
+  <iframe src="footer.html" width="100%" height="1150px" scrolling="no"></iframe>
+</html>
