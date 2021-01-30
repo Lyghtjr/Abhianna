@@ -381,6 +381,9 @@ background-color: bisque;
        width:336px;
        height: 250px;
    }
+   .phide{
+       display: none;
+   }
 
 }
 
