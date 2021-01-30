@@ -1,5 +1,5 @@
-body{margin: 0;
-    padding: 0;
+body{margin: 0px;
+    padding: 0px;
     width: 100%;
     height:100%;
     background-color: cornflowerblue;
@@ -15,7 +15,7 @@ header .search{
   padding-right: 25%;
   font-size: 17px;
   border-radius: 2px;
-  margin-left:25%;
+  margin-left:10%;
 }
 header .btn{
     font-size: 17px;
@@ -24,7 +24,7 @@ header .btn{
 }
 .nav{
     width: 100%;
-    height:40px;
+    height:47px;
     background-color:white;
 }
 .nav a{
@@ -90,9 +90,9 @@ header .btn{
     .sidenav a {font-size: 18px;}
   }
 #main button{
-    padding:12px 30px 12px 30px;
+   /* padding:12px 30px 12px 30px;*/
     font-weight: bold;
-    margin-left: 5%;
+    margin-left: 5px;
     border-radius: 5px;
     border-style: none;    
   }
@@ -223,7 +223,6 @@ margin-left: 267px;
 
 .course_container{  /*Course*/
 height:1350px;
-margin:3%;
 background-color: bisque;
 }
 
@@ -232,7 +231,7 @@ background-color: bisque;
     width: 330px;
     height:250px;
     margin: 3%;
-    margin-left:5%;
+ 
     background-color: whitesmoke;
 
 }
@@ -255,7 +254,6 @@ background-color: bisque;
     width: 330px;
     height:250px;
     margin: 3%;
-    margin-left:5%;
     background-color: whitesmoke;
 }
 .course5{
@@ -277,7 +275,7 @@ background-color: bisque;
     width: 330px;
     height:250px;
     margin: 3%;
-    margin-left:5%;
+
     background-color: whitesmoke;
 }
 .course8{
@@ -299,7 +297,7 @@ background-color: bisque;
     width: 330px;
     height:250px;
     margin: 3%;
-    margin-left:5%;
+   
     background-color: whitesmoke;
 }
 .course11{
@@ -317,35 +315,72 @@ background-color: bisque;
     background-color: whitesmoke;
 }
 
-@media screen and (max-width:991px){
+@media screen and (max-width:670px){
     .course_container{
-        height: 1900px;
+        height: 206rem;
     }
     .course1{
-        margin-left:100px ;
+        width: 336px;
+    }
+    .course2{
+        width: 336px;
     }
     .course3{
-        margin-left:100px ;
+        width: 336px;
     }
     .course4{
-        margin-left:30px ;
+        width: 336px;
     }
     .course5{
-        margin-left:100px ;
+        width: 336px;
+    }
+    .course6{
+        width: 336px;
     }
     .course7{
-        margin-left:100px ;
+        width: 336px;
+    }
+    .course8{
+        width: 336px;
     }
     .course9{
-        margin-left:100px ;
+        width: 336px;
     }
     .course10{
-        margin-left:30px ;
+        width: 336px;
     }
     .course11{
-        margin-left:100px ;
+        width: 336px;
     }
-
+    .course12{
+        width: 336px;
+    }
+    header .search{
+        padding: 6px;
+        border: none;
+       
+        font-size: 17px;
+        border-radius: 2px;
+      
+      }
+      
+    .opennavdashboard{
+        width:30px;
+    }
+    .nav a {
+    font-size:12px;
+    }
+    .nav .mid {
+        margin-left: 11px;
+        margin-right: 30px;
+    }
+    header .btn {
+        margin-left: 25px;
+    }
+   .course1 video{
+       width:336px;
+       height: 250px;
+   }
 
 }
 
