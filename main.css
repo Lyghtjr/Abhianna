@@ -377,6 +377,9 @@ background-color: bisque;
     }
     header .btn {
         margin-left: 0px;
+        font-size: 14px;
+        padding: 4px;
+        border-radius: 5px;
     }
    .course1 video{
        width:336px;
