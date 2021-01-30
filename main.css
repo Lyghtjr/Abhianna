@@ -315,7 +315,7 @@ background-color: bisque;
     background-color: whitesmoke;
 }
 
-@media screen and (max-width:670px){
+@media screen and (max-width:991px){
     .course_container{
         height: 206rem;
     }
