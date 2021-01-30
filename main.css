@@ -358,7 +358,7 @@ background-color: bisque;
     header .search{
         padding: 6px;
         border: none;
-       
+       margin-left:22px;
         font-size: 17px;
         border-radius: 2px;
       
@@ -368,7 +368,8 @@ background-color: bisque;
         width:30px;
     }
     .nav a {
-    font-size:12px;
+    font-size:14px;
+    padding: 10px 10px;
     }
     .nav .mid {
         margin-left: 11px;
