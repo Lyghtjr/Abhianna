@@ -166,47 +166,27 @@
     padding: 5px;
     width: 30px;
 }
+.menu li.menu-item.active .menu-cat:hover {
+    color: #de002e;
+}
       @media screen and (max-width:670px){
         .helements{
           font-size:22px;
+          margin-left: -30px;
         }
         .hidenavbar{
           display:none;
         }
+        
       }
-      .sidenav {
-    height: 100%;
-   /* width: 0;*/
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    border-left: 1px solid #e5e5e5;
-    background-color: #FFF;
-    overflow-x: hidden;
-    padding-top: 80px;
-    transition: 0.5s;
-}
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 15px;
-    text-transform: uppercase;
-    color: rgba(0,0,0,.5);
-    display: block;
-    transition: 0.3s;
-}
+      .slidenavbarclosebtn{
+         display:none;
+      }
+@media (max-width: 991px){
 .searchmobile {
     box-sizing: border-box;
     border: 2px solid black;
-    margin-left: 0.7rem;
+    margin-left: 7rem;
     font-size: 18px;
     background-color: white;
     background-image: url(searchicon.png);
@@ -217,6 +197,40 @@
     transition: width 0.4s ease-in-out;
     margin-top: 14px;
 }
+.slidenavbar{ 
+   height: 100%;
+    width: 280px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #e5e5e5;
+    background-color: #056;
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: 0.5s;
+    }
+    .slidenavbar a{
+      color:black;
+      text-decoration:none;
+      margin-left: 2rem;
+    }
+    .slidenavbar .slidenavbarclosebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color:black;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.slidenavbarclosebtn{
+         display:block;
+      }
+      .formcontrolnavbar {
+    margin-left: 2rem;
+}
+}
+
 
     </style>
   </head>
@@ -246,7 +260,7 @@
 </nav>
 <!--End of Topbar-->
 <!--Mobile NavBar-->
-<section id="mobile-header" class="d-block d-sm-none">
+<!--<section id="mobile-header" class="d-block d-sm-none">
   
   <div class="mobile-navbar">
     <div class="container">
@@ -266,53 +280,19 @@
     </div>
   </div>
   
-</section>
+</section>-->
 <!--End Navbar-->
 
-<!--Sidenav-->
-<div id="mySidenav" class="sidenav" style="width: 0px;">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a class="collapsed card-link" data-toggle="collapse" href="#online-content">
-        All Courses <span style="float: right; margin-right: 15px;"><i class="fa fa-caret-down"></i></span>
-      </a>
-
-
-  <a href="#">Blog</a>
-  <a href="#">Corporate Training</a>
- <a href="https://Lyghtjr.github.io/Abhianna/Abhianna-online-about-us.html">
-        About Us </a>
-      <a   href="https://Lyghtjr.github.io/Abhianna/contact_us.html">
-        Contact Us </a>
-       <form action="courses">
-  <input type="text" class="searchmobile" name="query" placeholder="Search Courses..">
-</form>
-    
-  
-  
-</div>
-
-<script>
-
-            /* Set the width of the side navigation to 250px */
-            function openNav() {
-            document.getElementById("mySidenav").style.width = "280px";
-            }
-
-            /* Set the width of the side navigation to 0 */
-            function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            }
-</script>
-<!--Sidenav End-->
 <!--Start of NavBar-->  
 <style>
       @media (min-width: 992px) {
         .menu-container {
           margin-top: 63px;
         }
+        
       }
       .menu-container {
-        left: -30rem !important;
+        left:-32rem !important;
         top: 40px;
         right: 0 !important;
         margin: auto;
@@ -328,6 +308,9 @@
   .megamenuhide {
         display: none !important;
       }
+      .menu li.active a:hover {
+    color: blue;
+}
       .menu {
         background: #f1f6fa;
         width: 240px;
@@ -360,9 +343,11 @@
       .menu li.active a {
         color: #51565e;
         line-height: 18px;
-        font-size: 12px;
+        font-size: 14px;
+    font-family: "GT-Walsheim-Pro",Arial,Helvetica,sans-serif;
         font-weight: 400;
         display: block;
+            text-decoration: none;
       }
       @media (min-width: 992px) {
         .menu li.menu-item.active .menu-cat {
@@ -388,8 +373,9 @@
 
       .menu li {
         color: #51565e;
-        line-height: 32px;
-        font-size: 12px;
+           line-height: 32px;
+    font-size: 14px;
+    font-family: "GT-Walsheim-Pro",Arial,Helvetica,sans-serif;
 
         background-color: transparent;
         list-style: none;
@@ -746,6 +732,7 @@
         .menu li.active .sub-menu-item a {
           padding: 8px 0;
           margin-bottom: 0;
+          text-decoration:none;
         }
       }
       .menu li.pull-left li {
@@ -800,6 +787,9 @@
       }
     
       @media (max-width: 991px){
+        .hidden-sm {
+          display:none;
+        }
 .menu-overlay {
     background: rgba(0,0,0,0.6);
   
@@ -876,6 +866,7 @@
   height: 100%;
   overflow-y: auto;
   top: 0;
+  margin-right: 0px;
   position: fixed;
   z-index: 99999999;
 }
@@ -1094,29 +1085,49 @@ li.active .sub-menu {
   left: 15px;
   top: 8px;
 }
+.imgsrcposition{
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
 
 }
+.imgsrcposition{
+height:100px;
+width:150px;
+margin-left:-4rem
+}
     </style>
-    <section id="main-navbar" class="d-none d-sm-block mt-n4" >
+    <section id="main-navbar" class=" d-sm-block mt-n4" >
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
     <div class="container ">
         <a class="navbar-brand" href="https://lyghtjr.github.io/Abhianna/">
-            <img src="./image/Abhianna.png" style="height:100px;width:150px;margin-left:-4rem" alt="">
+            <img src="./image/Abhianna.png" class="imgsrcposition"  alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-menu">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto slidenavbar"  >
+             <a href="javascript:void(0)" class="slidenavbarclosebtn" onclick="closeNav()" class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">&times;</a>
+ 
                 <li class="nav-item dropdown">
-                    <a class="btn AllcoursesShowHover"  style="background-color: #ffc107;margin-right:15px;" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="btn AllcoursesShowHover mb-1"  style="background-color: #ffc107;margin-right:15px;" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp <strong> All Courses</strong>
                     </a>
-    <div id="MegaMenu" class="">
+ <div id="MegaMenu" class="">
       <div>
-        <div id="megamenu-mobile-overlay" class="menu-overlay visible-sm megamenuhide">
+        <div id="megamenu-mobile-overlay" class="menu-overlay visible-sm hide">
           <div class="first-menu">
             <ul>
+              <li class="visible-sm menu-head">
+                <span class="back-btn"></span>Menu
+              </li>
+              <li>
+                <span class="mobile-all-courses" title="All courses"
+                  >All courses</span
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -1125,9 +1136,14 @@ li.active .sub-menu {
             <li>
               <h4 class="hidden-sm mx-3">COURSE CATEGORIES</h4>
             </li>
+            <li class="visible-sm menu-head">
+              <span class="back-btn mx-3"></span>All courses<span
+                class="back-btn menu-close-btn"
+              ></span>
+            </li>
             <li class="menu-item active">
               <a class="menu-cat" title="Analytics Academy"
-                ><span class="back-arrow mx-3 "></span> Analytics Academy</a
+                ><span class="back-arrow mx-3 " ></span> Analytics Academy</a
               >
               <ul class="sub-menu px-0">
                 <li class="col-md-5 pull-left">
@@ -2637,7 +2653,11 @@ li.active .sub-menu {
          
         });    
 
-        
+ $(".menu-head .back-btn,.menu-head .menu-close-btn").click(
+        function () {
+          $("#megamenubox").addClass("megamenuhide");
+         
+        }); 
 
         $(document).click((event) => {
        if (!$(event.target).closest('#megamenubox').length) {
@@ -2645,9 +2665,13 @@ li.active .sub-menu {
            }        
                  });  
   
+        $(".menu-cat").click(
+             function () { 
+                $(".active").removeClass("active");      
         
-      $(window).ready(function() {
-      if ($(window).width() > 991) {
+    });
+
+     $(".active").addClass("active");
      $(".menu-item").hover(
         function () {
           $(".active").removeClass("active");
@@ -2656,36 +2680,36 @@ li.active .sub-menu {
         function () {
           $(this).removeClass("active");
           $(this).addClass("active");
-        },);         
-      }
-     else {
+        },
+        
+        );         
+
+      $(window).ready(function() {
+      if ($(window).width() < 991) {
        $(".active").removeClass("active");
-        $(".menu-item").click(
-        function () {
-          $(".active").removeClass("active");
-          $(this).addClass("active");
-        });
-     }
+       
+  }
     });
-    
+     
+   
 
     </script>
                  </li>
                <form action="search">
-   <input class="form-control " style="width:150px; margin-right:10px" type="search" placeholder="Search Courses" aria-label="Search">
+   <input class="form-control mb-1 formcontrolnavbar" style="width:150px; margin-right:10px" type="search" placeholder="Search Courses" aria-label="Search">
        
        
        
        
 </form>
-                <li class="nav-item">
-                 <a class=" text-white" style="font-size:16px; margin-right:10px";  href="https://Lyghtjr.github.io/Abhianna/contact_us.html">Contact Us</a>
+                <li class="nav-item mb-1">
+                 <a class=" text-white " style="font-size:16px; margin-right:10px";  href="https://Lyghtjr.github.io/Abhianna/contact_us.html">Contact Us</a>
                     </li>
-                <li class="nav-item">
- <a class=" text-white" style="font-size:16px;" href="#">Blogs</a>
+                <li class="nav-item mb-1">
+ <a class=" text-white" style="font-size:16px;margin-right:10px;" href="#">Blogs</a>
      </li>
-            <li class="nav-item">
- <a class=" text-white" style="font-size:16px;margin-left:10px;" href="https://Lyghtjr.github.io/Abhianna/Abhianna-online-about-us.html">About Us</a>
+            <li class="nav-item mb-1">
+ <a class=" text-white" style="font-size:16px;" href="https://Lyghtjr.github.io/Abhianna/Abhianna-online-about-us.html">About Us</a>
      </li>
             </ul>
         </div>
