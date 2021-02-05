@@ -19,14 +19,7 @@
         font-size: 22px;
         filter: drop-shadow(8px 8px 10px black);
       }
-      .container p {
-        color: white;
-        letter-spacing: 2px;
-        font-size: larger;
-        filter: drop-shadow(8px 8px 10px black);
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-      }
+      
       .startleaningbutton {
         background-color: #FFC107;
         color: black;
@@ -61,10 +54,9 @@
         .helements{
           font-size:22px;
         }
-        .hidenavbar{
-          display:none;
-        }
+        
       }
+      
       .sidenav {
     height: 100%;
    /* width: 0;*/
@@ -993,3 +985,65 @@ font-weight: 400;
 width: 100%;
 }}
 /*End Of Login Form*/
+
+
+/*Menu */
+
+@media only screen and (max-width: 670px){
+#menu{
+  display: none;
+}
+}
+#menu {
+  padding: 15px 0;
+  box-shadow: 0 2px 5px #ccc;
+  z-index: 3;
+  background: #fff;
+}
+#menu .menu-item a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 14px;
+}
+.key-features .key-feature-item img {
+  width: 20%;
+}
+.about-course ul li {
+  font-size: 14px;
+  color: rgba(0,0,0,.7);
+  padding: 5px;
+  list-style: disc;
+  margin-left: 50px;
+}
+.cta {
+  padding-top: 1rem;
+  text-align: center;
+}
+.btn6 {
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background:#056;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 12px 45px;
+  transition: .3s;
+  border-radius: 3px;
+
+}
+#course .query-form {
+  background:#056;
+}
+.newform {
+  color: grey;
+  font-family: "Open Sans",Sans-serif;
+  border-radius: 8px;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: -.3px;
+  background: white;
+  padding: 20px;
+}
