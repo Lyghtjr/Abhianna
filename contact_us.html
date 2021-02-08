@@ -15,7 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <title>Abhianna</title>
+    <title>Contact us</title>
     <script src="main.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Sofia"
@@ -32,6 +32,12 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous"
+  />
     
 <link rel="icon" type="image/png" href="./image/favicon.png"/>
 <link rel="icon" type="image/png" href="./image/favicon.png"/>
@@ -152,7 +158,15 @@
   <body>
     <header class="col-md-12 ">
     <!--Start of Topbar-->
-    <nav class=" mx-5 navbar navbar-expand-lg navbar-light bg-dark hidenavbar">
+    <style>
+      @media screen and (max-width:991px){
+ 
+          .hidenavbars{
+            display:none;
+          }
+        }
+      </style>
+    <nav class=" mx-5 navbar navbar-expand-lg navbar-light bg-dark hidenavbars">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -175,6 +189,7 @@
 </nav>
 <!--End of Topbar-->
 <!--Mobile NavBar-->
+
 <section id="mobile-header" class="d-block d-sm-none">
   
   <div class="mobile-navbar">
@@ -2721,11 +2736,84 @@ li.active .sub-menu {
       </div>
     </header>
 <br/>
-   <div class="col-lg-12 ">
+   <div class="row mx-auto">
+     <!--SocialMediaAccount-->
+<style>
+
+  .social-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+     
+  }
+  .social-links ul li a {
+    color: #fff;
+  }
+  .social-links ul .facebook {
+    background-color: #3b5998;
+  }
+  .social-links ul li {
+    font-size: 20px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    margin-bottom:10px;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+
+    margin-right: 15px;
+  }
+  .social-links ul .linkedin {
+    background-color: #0e76a8;
+  }
+  .social-links ul .youtube {
+    background-color: #c4302b;
+  }
+  .social-links ul .whatsapp {
+    background-color: #25d366;
+  }
+</style>
+<div class="col-md-2 mb-5" >
+  <div>
+    <div class="social-links mt-3">
+      <ul>
+        <li class="facebook">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li class="twitter" style="
+            background: radial-gradient(
+              circle at 30% 107%,
+              #fdf497 0%,
+              #fdf497 5%,
+              #fd5949 45%,
+              #d6249f 60%,
+              #285aeb 90%
+            );
+          ">
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </li>
+        <li class="linkedin">
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </li>
+        <li class="youtube">
+          <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </li>
+        <li class="whatsapp">
+          <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 
-    <div class="card border-secondary mb-3">
-    <div class="card-body text-secondary">
+<!--End Of SocialMediaAccount-->
+   <div class="col-md-8 ">
+    <div class="card border-secondary mb-3 ">
+    <div class="card-body text-secondary" style="height:267px">
             
         <p class="card-text">
 
@@ -2746,6 +2834,7 @@ li.active .sub-menu {
                 </div>
                 
                 </div>
+              </div>
                 
 <br/>
 
