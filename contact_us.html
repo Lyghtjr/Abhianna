@@ -166,7 +166,11 @@
           }
         }
       </style>
-    <nav class=" mx-5 navbar navbar-expand-lg navbar-light bg-dark hidenavbars">
+    <nav class=" mx-5 navbar navbar-expand-lg navbar-light bg-dark hidenavbars" style="
+    position: fixed;
+    width:90%;
+    top: 0;
+    z-index: 1050;">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -1049,11 +1053,11 @@ li.active .sub-menu {
 
 }
     </style>
-    <section id="main-navbar" class="d-none d-sm-block mt-n4" >
+    <section id="main-navbar" class="pt-5 d-none d-sm-block mt-n4" >
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
     <div class="container ">
         <a class="navbar-brand" href="https://lyghtjr.github.io/Abhianna/">
-            <img src="./image/Abhianna.png" style="height:100px;width:150px;margin-left:-4rem" alt="">
+            <img class="pt-2" src="./image/Abhianna.png" style="height:100px;width:150px;margin-left:-4rem;" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -2775,13 +2779,27 @@ li.active .sub-menu {
   .social-links ul .whatsapp {
     background-color: #25d366;
   }
+   .tooltip-inner {
+    background-color: #056; 
+    color: #FFFFFF; 
+    border: 1px solid #fff; 
+    padding: 15px;
+     margin:20px;
+    font-size: 20px;
+  }
+ 
+ .tooltip.bs-tooltip-right .arrow:before {
+    border-right-color: #fff !important;
+   
+    display:none;
+}
 </style>
 <div class="col-md-2 mb-5" >
   <div>
     <div class="social-links mt-3">
       <ul>
         <li class="facebook">
-          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a  href="#"  data-toggle="tooltip" data-placement="right" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         </li>
         <li class="twitter" style="
             background: radial-gradient(
@@ -2793,23 +2811,27 @@ li.active .sub-menu {
               #285aeb 90%
             );
           ">
-          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="right" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </li>
         <li class="linkedin">
-          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="right" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </li>
         <li class="youtube">
-          <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="right" title="Youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
         </li>
         <li class="whatsapp">
-          <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="#" data-toggle="tooltip" data-placement="right" title="Whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
         </li>
       </ul>
     </div>
   </div>
 </div>
 
-
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
+</script>
 <!--End Of SocialMediaAccount-->
    <div class="col-md-8 ">
     <div class="card border-secondary mb-3 ">
@@ -2840,6 +2862,17 @@ li.active .sub-menu {
 
  <iframe src="footer/footer.html" width="100%" height="1490px" scrolling="no"></iframe>
 
-
+<script>
+    var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("mainNav").style.top = "0";
+  } else {
+    document.getElementById("mainNav").style.top = "-850px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 </body>
 </html>
