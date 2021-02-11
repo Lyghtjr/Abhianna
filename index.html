@@ -242,9 +242,22 @@
     </style>
   </head>
   <body>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("mainNav").style.top = "0";
+  } else {
+    document.getElementById("mainNav").style.top = "-850px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
     <header class="col-md-12 ">
     <!--Start of Topbar-->
-    <nav class=" mx-5 navbar navbar-expand-lg navbar-light bg-dark hidenavbar">
+    <nav class=" mx-5 navbar navbar-expand-lg navbar-light bg-dark hidenavbar" style="
+    position: fixed;width:90%;top: 0;z-index: 1050;>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -1105,11 +1118,11 @@ width:150px;
 margin-left:-4rem
 }
     </style>
-    <section id="main-navbar" class=" d-sm-block mt-n4" >
+    <section id="main-navbar" class="pt-5 d-sm-block mt-n4" >
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
     <div class="container ">
         <a class="navbar-brand" href="https://lyghtjr.github.io/Abhianna/">
-            <img src="./image/Abhianna.png" class="imgsrcposition"  alt="">
+            <img class="pt-2" src="./image/Abhianna.png" class="imgsrcposition"  alt="">
         </a>
         <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -4416,7 +4429,7 @@ span.text {
                 <div class="row justify-content-center border-line">
                   <img
                     src="https://sgp1.digitaloceanspaces.com/hh-certificates/images/1606193800ezgif.com-gif-maker (7).webp"
-                    style="height: 469px"
+                    style="height: 470px"
                   />
                 </div>
               </div>
