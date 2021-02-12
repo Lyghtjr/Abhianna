@@ -128,7 +128,7 @@
         display: none !important;
       }
       .menu {
-        background: #f1f6fa;
+        background: #EBF5FB;
         width: 240px;
         position: absolute;
         left: 0;
@@ -522,7 +522,7 @@
       .sub-menu {
         border: 0 !important;
         left: 240px;
-        background: #fff;
+        background: #FBFCFC ;
         position: absolute;
         top: 0;
         width: 0;
