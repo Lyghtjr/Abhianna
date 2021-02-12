@@ -21,7 +21,7 @@
       }
       
       .startleaningbutton {
-        background-color: #FFC107;
+        background-color:#FFBF00;
         color: black;
         filter: drop-shadow(8px 8px 10px black);
         border-radius: 8px;
@@ -1127,7 +1127,7 @@ width: 100%;
         .COI-preferred {
     position: relative;
     top: 0;
-    background: #eb5757;
+    background: #F7D358;
     color: #fff;
     font-size: 16px;
     padding: 5px 10px;
@@ -1156,9 +1156,14 @@ width: 100%;
 .chech-display {
   display: flex;
 }
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
 .new-a {
   line-height: 24px;
   font-size: 13px;
+  cursor:pointer;
   text-decoration: none;
   color: #2e3d49;
 }
@@ -1171,9 +1176,9 @@ i.fa.fa-check {
   padding: 2px;
 }
 .price-display .btn7 {
-  background: #ffc107;
-  color: #212529;
-  border: 1px solid #ffc107;
+  background: #FA5858;
+  color: #fff;
+  border: 1px solid #FA5858;
   padding: 11px 26px;
   margin: 0px 12px;
   font-weight: 700;
@@ -1201,10 +1206,10 @@ i.fa.fa-check {
   align-items: baseline;
 }
 .btn7 {
-  background: #ffc107;
-  color: #212529;
-  border: 1px solid #ffc107;
-  padding: 12px 30px;
+  background: #FA5858;
+  color: #fff;
+  border: 1px solid #FA5858;
+  padding: 15px;
   margin: 17px;
   font-weight: 700;
   font-size: 18px;
@@ -1222,26 +1227,27 @@ i.fa.fa-check {
   display: table;
   width: 100%;
   padding: 14px;
-  border: 2px solid #ffc107;
+  border: 2px solid #F78181;
 }
 .table td, .table th {
   padding: .75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
 }
+
 button.btn7.new-btn.query-modal-button {
   font-size: 14px;
 }
 @media only screen and (max-width: 1200px){
 #upcoming-batches tbody td {
-    font-size: 10px;
+    font-size: 12px;
     text-align: left;
     padding: 1rem;
     color: rgba(0,0,0,.7);
 }}
 @media only screen and (max-width: 670px){
 #upcoming-batches tbody td {
-    font-size: 10px;
+    font-size: 12px;
     text-align: left;
     padding: 0.1rem;
     color: rgba(0,0,0,.7);
