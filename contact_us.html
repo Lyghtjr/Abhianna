@@ -1055,6 +1055,33 @@ li.active .sub-menu {
     padding:0;
   }
 }
+.menu-master-prg ul li::before {
+    width: 5px;
+    height: 5px;
+    background: #848da0;
+    padding: 0;
+    border-radius: 50%;
+    left: -30px;
+    position: absolute;
+    margin-top: 8px;
+    content: "";
+    display: inline-block;
+    z-index: 1;
+}
+.menu-master-prg ul li::after {
+    width: 1px;
+    content: "";
+    display: inline-block;
+    background: #d2d6de;
+    position: absolute;
+    left: -28px;
+    bottom: -15px;
+    z-index: 0;
+    top: 12px;
+}
+.menu-master-prg ul li:last-child::after {
+    display: none;
+}
     </style>
     <section id="main-navbar" class="pt-5 d-none d-sm-block mt-n4" >
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
